@@ -1,8 +1,8 @@
-# Calculator
+# Form Validation
 
 ## Overview
 
-### This is a Project on JavaScript, that performs addition, subtraction, multiplication and division!
+### This is a Project on JavaScript, it verifies username and password!
 
 ![](./media/design.png)
 
