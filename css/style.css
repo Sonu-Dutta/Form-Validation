@@ -46,9 +46,8 @@ h3{
     height: 26rem;
     width: 20rem;
     font-size: 1.5rem;
-    /* box-shadow: 2px 3px 7px black; */
     transition: all 4s ease-in .1s;
-    /* animation-name: bg; */
+    animation-name: bg;
     animation-duration: 1s;
     animation-iteration-count:initial;
 }
