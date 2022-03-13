@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right,#0D98BB,#2AA7BC,#82D3BD);
+}
+h2,h3{
+    text-shadow: 2px 3px 4px black;
+}
+
+h2{
+    color: white;
+}
+h3{
+    margin-top: 1rem;
+    color: white;
+    transition: all 4s ease-in .1s;
+    animation-name: head;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes head{
+    0%{
+        transform: skew(5deg);
+    }
+    25%{
+        transform: skew(10deg);
+    }
+    75%{
+        transform: skew(-10deg);
+    }
+    100%{
+        transform: skew(-5deg);
+    }
+}
+
+#container{
+    color: white;
+    background-color: rgba(41, 41, 44, 0.5);
+    height: 26rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    /* box-shadow: 2px 3px 7px black; */
+    transition: all 4s ease-in .1s;
+    /* animation-name: bg; */
+    animation-duration: 1s;
+    animation-iteration-count:initial;
+}
+@keyframes bg{
+    0%{
+        transform: scale(2);
+        transform: translateY(-4000px);
+        height: 2rem;
+        width: 1rem;
+    }
+    25%{
+        transform: scale(2);
+        transform: translateY(-1000px);
+        height: 3rem;
+        width: 2rem;
+    }
+    75%{
+        transform: translateY(100px);
+        height: 30rem;
+        width: 23rem;
+    }
+    100%{
+        transform: translateY(1px);
+    }
+}
+
+body,#container,form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+input{
+    padding: .7rem;
+    width: 14rem;
+    text-align: center;
+}
+#submit{
+    text-shadow: 2px 1px 2px black;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-image: linear-gradient(to left,  #65C4BD,#9FE2BE);
+}
+#submit:hover{
+    position: relative;
+    top: .4rem;
+    background-image: linear-gradient(to right, #65C4BD,#9FE2BE);
+    width: 15rem;
+}
+.error{
+    text-align: left;
+    color:rgb(208, 228, 28);
+    font-size: .8rem;
+}
+
